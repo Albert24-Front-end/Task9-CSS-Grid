@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* must have in any CSS file */
+    /* box-sizing: border-box; - почитать об этом */
+    color: #222;
+    font-family: "TT Hoves";
+    /* outline: 2px solid green; */
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: calc(6.5vw + 35.7px);
+}
+.landing4 {
+    padding: 0 calc(10.7vw - 16px);
+}
+.landing4 h2 {
+    font-family: "TT Hoves";
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    line-height: 118%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+    width: calc(29.2vw + 220px)
+}
+.legend {
+    margin-top: calc(5.5vw + 19px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#Yuri {
+    flex-basis: 399px;
+    flex-shrink: 1;
+}
+.legendInfo{
+    flex-shrink: 100;
+    flex-basis: 566px;
+}
+@media (max-width: 1099px) {
+    .legend {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.teacherInfo h3 {
+    font-family: "TT Hoves";
+    font-size: calc(1.1vw + 34px);
+    font-weight: 700;
+    line-height: 121%;
+    text-align: left;
+    font: bolder;
+    margin-bottom: calc(1.1vw + 6px);
+}
+.teacherInfo p {
+    font-family: "TT Hoves";
+    font-size: calc(1vw + 14px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: calc(5.9vw + 19px);
+}
+.legendCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "smile cup"
+                                      "case  keyboard";
+    gap: calc(1.1vw + 26px) calc(8.8vw - 23px);
+}
+.card img {
+    display: block;
+}
+.card span {
+    display: block;
+    font-size: calc(0.6vw + 14px);
+    width: calc(10.4vw + 117.5px);
+}
+.card:first-child{
+    grid-area: case;
+}
+.card:nth-of-type(2) {
+    grid-area: cup;
+}
+.card:nth-of-type(3) {
+    grid-area: smile;
+}
+.card:nth-of-type(4) {
+    grid-area: keyboard;
+}
+@media (max-width: 700px) {
+    .desktop {display: none;}
+    .phone {display: block;}
+    .legendCards {
+        grid-template-areas: "smile keyboard "
+                                          "cup   case";
+    }
+}
+
+
+.landing8 {
+    padding: 0 calc(10.7vw - 16px);
+}
+.landing8 h2 {
+    font-family: "TT Hoves";
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    line-height: 112%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: calc(44.3vw + 162px);
+    text-transform: uppercase;
+    margin-bottom: calc(2.2vw + 12px);
+}
+.landing8 p {
+    font-family: "TT Hoves";
+    font-size: calc(1vw + 14px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    width: calc(60.6vw + 101px);
+    margin-bottom: calc(1.8vw + 13px);
+}
+.landing8 p span {
+    font-family: "TT Hoves";
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 37.8px;
+    text-align: left;
+}
+.landing8 img {
+    width: calc(82vw + 14px);
+}
+
+
+.landing7 {
+    padding: 0 calc(10.7vw - 16px);
+}
+.diplomaInfo {
+    gap: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "diploma diplomaHeader"
+                                      "diploma diplomaText";                                   
+}
+.landing7 img {
+    display: block;
+    margin-top: 13px;
+    grid-area: diploma;
+    width: calc(11.3vw + 286px);
+}
+.landing7 h2 {
+    font-family: "TT Hoves";
+    font-size: calc(2.7vw + 24px); /*58-34*/
+    font-weight: 500;
+    line-height: 118%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+    grid-area: diplomaHeader;
+    /* width: calc(27.6vw + 224px); */
+}
+.landing7 p {
+    font-family: "TT Hoves";
+    font-size: calc(1vw + 14px); /*27-18 */
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    grid-area: diplomaText;
+    width: calc(20.6vw + 251px);
+}
+@media (max-width: 1000px) {
+    .diplomaInfo {
+        gap: 20px;
+        justify-content: left;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "diplomaHeader"
+                                          "diploma"
+                                          "diplomaText";                             
+    }
+    
+}
+.landing9 {
+    padding: 0 calc(-2.6vw + 33px);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "student_header student_header"
+                                      "student-box student_text";         
+}
+.landing9 h2 {
+    margin-left: calc(10.1vw - 14px);
+    font-family: "TT Hoves";
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+    grid-area: student_header;
+}
+.student-box {
+    margin: calc(1.1vw + 16px) 0 0 calc(6.7vw - 25px);
+    display: block;
+    grid-area: student-box;
+    width: calc(18.5vw + 337px);
+}
+.student_text {
+    display: flex;
+    flex-direction: column;
+    margin: calc(7.7vw - 9px) auto auto calc(-2.5vw + 33px);
+    gap: calc(0.6vw + 18px);
+    font-family: "TT Hoves";
+    font-size: calc(0.3vw + 17px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    width: calc(21.2vw + 248px);
+    grid-area: student_text;
+}
+@media (max-width: 1000px) {
+    .landing9 {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "student_header"
+                                          "student-box"
+                                          "student_text";                             
+    }
+}
+
+
+/* img#Yuri {
+    margin: 0 calc(5.6vw - 21px) calc(-2.2vw + 28px) 0;
+    width: calc(7.7vw + 300px);
+    height: calc(10.8vw + 423px);
+}
+.legendInfo {
+    width: calc(29.6vw + 211px);
+}
+.teacherInfo {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1.1vw + 6px);
+  margin-bottom: calc(5.5vw + 19px);
+}
+.teacherInfo h3 {
+    font-family: "TT Hoves";
+    font-size: calc(1.1vw + 34px);
+    font-weight: 700;
+    line-height: calc(1.4vw + 40px);
+    text-align: left;
+    font: bolder;
+}
+.teacherInfo p {
+    font-family: "TT Hoves";
+    font-size: calc(1vw + 14px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+.legendCards {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(29.6vw + 211px);
+    gap: calc(8.8vw - 23px);
+}
+.card {
+    gap: 10px;
+    width: calc(10.4vw + 117px)
+}
+.card span {
+    font-family: "TT Hoves";
+    font-size: calc(0.6vw + 14px);
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+} */
